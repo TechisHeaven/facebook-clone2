@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <link rel="stylesheet" href="/index.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Instagram Clone</title>
 </head>
 
 <body class="bg-gray-100 relative m-0 p-0 font-popins text-xs box-border sm-mx:overflow-x-hidden">
+
+
+
     <div class="container flex mx-auto items-center justify-center">
         <div class="left sm-mx:hidden">
-            <img src="/images/left_photo.png" class="  border-8 border-solid border-black rounded-3xl border-gray-800 " alt="phone">
+            <img src="/images/left_photo.png" class="  border-8 border-solid border-black rounded-3xl  " alt="phone">
 
         </div>
         <div class="right flex flex-col sm-mx:mt-0 p-12 sm-mx:pt-6 w-[500px] sm-mx:justify-center sm-mx:items-center">
@@ -21,10 +24,12 @@
                 <div class="img flex justify-center pb-5">
                     <img src="/images/instalogo.png" class=" m-3 w-40 items-center flex justify-center " alt="">
                 </div>
-                <input class=" bg-gray-100 focus:outline-gray-400 h-10 pl-3 border-gray-200 border-2 m-1" type="text"
-                    placeholder="Phone number, username or email">
-                <input class=" bg-gray-100 p-2 focus:outline-gray-400 border-gray-200 border-2 m-1" type="password" placeholder="Password">
-                <button class=" rounded-md bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-2 mt-3 ">Log In</button>
+                <form action="/result_page.html" class="flex flex-col">
+                <input id="usr" class=" bg-gray-100 focus:outline-gray-400 h-10 pl-3 border-gray-200 border-2 m-1" type="text"
+                    placeholder="Phone number, username">
+                <input id="pass" class=" bg-gray-100 p-2 focus:outline-gray-400 border-gray-200 border-2 m-1" type="password" placeholder="Password">
+                <button class=" rounded-md bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white py-2 mt-3 " onclick="login();">Log In</button>
+            </form>
                 <hr>
                 <span class="flex items-center justify-center m-4">OR</span>
                 <div class="fbbtn flex items-center justify-center">
@@ -47,6 +52,7 @@
             </div>
         </div>
     </div>
+    <script src="/index.js"></script>
 </body>
 
 </html>
